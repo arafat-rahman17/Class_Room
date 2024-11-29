@@ -28,7 +28,7 @@ h3 {
 }
 h4 {
   font-size: 12px;
-  color: #636366;
+  color: #5e5e6d;
 }
 a {
   text-decoration: none;
@@ -568,4 +568,32 @@ p {
 .purple__bg {
   background-color: #6159e6;
 }
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+  .sidebar__container {
+    display: flex;
+    width: 200px; /* Sidebar for tablets */
+  }
+  .body__part__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Sidebar + Main Content */
+    gap: 20px;
+  }
+  .card {
+    width: 48%; /* Adjust card size */
+  }
+}
 
+/* Large Screens (Desktops, 1024px and above) */
+@media (min-width: 1024px) {
+  .sidebar__container {
+    width: 280px; /* Full sidebar width */
+  }
+  .body__part__container {
+    grid-template-columns: repeat(4, 1fr); /* Full grid layout */
+    gap: 30px;
+  }
+  .card {
+    width: 30%;
+  }
+}
