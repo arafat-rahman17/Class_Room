@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="class.js"></script>
+<link rel="shortcut icon" href="https://imgs.search.brave.com/UURfYnMhrxwpFe2BgJ2GwMXCmu6u5LR5cpoicsOXtd8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltYWdlX2dh/bGxlcnkyL1B5dGhv/bi1Mb2dvLUZyZWUt/RG93bmxvYWQtUE5H/LnBuZw" type="image/x-icon">
+    <title>Classroom</title>
+  </head>
+  <body>
+    <!----------------------------------------------------------------------------------- Sidebar ------------------------->
+    <div class="sidebar__container">
+      <div class="sidebar__top-section">
+        <div class="sidebar__logo-section">
+          <div class="sidebar__brand-logo">
+            <img src="https://www.cdnlogo.com/logos/g/13/google-classroom.svg" alt="" />
+          </div>
+          <h2 class="sidebar__title accent__text">ClassRoom</h2>
+        </div>
+        <div class="sidebar__button-wrapper">
+          <a class="sidebar__add-button" id="addNewItem" href="#">+ Add New</a>
+        </div>
+        <!---------------------------------- Sidebar Navigation -------------------------------------->
+        <nav class="sidebar__navigation">
+          <ul class="navigation__list">
+            <a href="#"><li class="navigation__item"><i class="fa-solid fa-sliders"></i>Dashboard</li></a>
+            <a href="#"><li class="navigation__item"><i class="fa-solid fa-calendar-day"></i>Incoming Lesson</li></a>
+            <a href="#"><li class="navigation__item"><i class="fa-solid fa-user-group"></i>Groups</li></a>
+            <a href="#"><li class="navigation__item"><i class="fa-solid fa-book-open"></i>Materials</li></a>
+            <a href="#"><li class="navigation__item"><i class="fa-solid fa-graduation-cap"></i>Semester</li></a>
+            <a href="#"><li class="navigation__item">
+              <i class="fa-solid fa-envelope"></i>Inbox
+              <div class="navigation__message-count">4</div>
+            </li></a>
+          </ul>
+        </nav>
+      </div>
+      <!-------------------------------------------- User Info Section ----------------------------------------->
+      <div class="sidebar__user-info">
+        <div class="user-info__profile">
+          <div class="user-info__avatar-border">
+            <div class="user-info__avatar">
+              <img src="AP.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="user-info__details">
+            <h3 class="user-info__name" style="color: rgb(214, 214, 224);">Arafat Rahman</h3>
+            <p class="user-info__role">Admin</p>
+          </div>
+        </div>
+        <a class="user-info__logout-button" href="#logout" style="background-color: red; color: rgb(228, 222, 222);">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>Logout
+        </a>
+      </div>
+    </div>
+    <!------------------------------------------------------------ Main Body ---------------------------------------------------------------->
+    <div class="body__part__container">
+      <div class="body__part body__header"><h1 class="page__title">Dashboard</h1></div>
+      <div class="body__part body__search">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" name="search" id="search">
+        </div>
+        <div class="notification">
+          <i class="fa-solid fa-bell"></i>
+          <div class="notification__badge"></div>
+        </div>
+      </div>
+      <div class="body__part body__incoming__lesson">
+        <div class="incomming_lesson_header">
+          <h3 class="class_title">Incomming Lesson</h3>
+          <div class="incomming_lesson_buttons">
+            <a class="button__link" href="#">Show all</a>
+            <button class="button__link"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+          </div>
+        </div>
+        <h4 class="day">Monday</h4>
+        <a href="#"><div class="incomming__lesson">
+          <div class="lesson__details">
+            <div class="icon"><i class="fa-solid fa-calendar-plus"></i></div>
+            <div class="schedule">
+              <h4 class="time">9:00AM - 10:30PM</h4>
+              <p class="course">Python - 22nd Batch</p>
+            </div>
+          </div>
+          <h4 class="lesson upcoming"><i class="fa-solid fa-circle fa-2xs"></i>&nbsp Lesson 30</h4>
+          <p class="media">Online Classes <span class="primary__txt">Zoom</span></p>
+          <i class="fa-solid fa-angle-right"></i>
+        </div></a>
+        <a href="#"><div class="incomming__lesso">
+          <div class="lesson__detais">
+            <div class="ico"></i></div>
+            <div class="schedu">
+             
+            </div>
+          </div>
+        
+        </div></a>
+        <h4 class="day">Tuesday</h4>
+        <a href="#"><div class="incomming__lesson">
+          <div class="lesson__details">
+            <div class="icon"><i class="fa-solid fa-calendar-plus"></i></div>
+            <div class="schedule">
+              <h4 class="time">2:00 PM - 3:30PM</h4>
+              <p class="course">ML - 22nd Batch</p>
+            </div>
+          </div>
+          <h4 class="lesson"><i class="fa-solid fa-circle fa-2xs"></i>&nbsp Lesson 32</h4>
+          <p class="media">Online Classes <span class="primary__txt">Zoom</span></p>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div></a>
+      <div class="body__part body__materials">
+        <h3>Materials</h3>
+        <div class="card__container">
+          <div class="card">
+            <h2 class="card__title">Supervised Machine Learning</h2>
+            <p>Description</p>
+            <img src="https://img.freepik.com/free-vector/hand-coding-concept-illustration_114360-8193.jpg" alt="">
+          </div>
+          <div class="card">
+            <h2 class="card__title">unsupervised machine learning</h2>
+            <p>Description</p>
+            <img src="https://cdn.pixabay.com/photo/2020/11/07/10/25/machine-learning-5720531_1280.png" alt="">
+          </div>
+          <div class="card">
+            <h2 class="card__title">Reinforcement machine learning</h2>
+            <p>Description</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/11247/11247032.png" alt=""></div>
+        </div>
+      </div>
+      <div class="body__part body__groups">
+        <div class="body__groups__header">
+          <h3>Groups</h3>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div class="group__container">
+          <!-------------------------------------------------------------------- Single Group  -------------------------------------------------->
+          <div class="group">
+            <div class="group__image"><img src="https://cdn2.vectorstock.com/i/1000x1000/77/36/artificial-intelligence-ai-icon-vector-23097736.jpg" alt=""></div>
+            <div class="group__info__click">
+              <div class="group__info">
+                <h3>Data science</h3>
+                <p class="group__student__count">No of Student 950</p>
+              </div>
+              <i class="fa-solid fa-angle-down group__right__arow"></i>
+            </div>
+          </div>
+          <!-- ----------------------------Single Group End ---------------------- -->
+          <div class="group__full__box group__clicked">
+            <div class="group">
+              <div class="group__image"><img src="https://cdn2.vectorstock.com/i/1000x1000/77/36/artificial-intelligence-ai-icon-vector-23097736.jpg" alt=""></div>
+              <div class="group__info__click">
+                <div class="group__info">
+                  <h3>Mathematics</h3>
+                  <p class="group__student__count">No of Student 290</p>
+                </div>
+                <i class="fa-solid fa-angle-up group__right__arow"></i>
+              </div>
+            </div> 
+            <a class="group__properties" href="#">
+              <i class="fa-solid fa-paper-plane"></i>
+              <b>Send Message</b>
+              </a>
+            <a class="group__properties" href="#">
+              <i class="fa-solid fa-pen-to-square"></i>
+              <b>Reschedule Lesson</b>
+            </a>
+            <a class="group__properties" href="#">
+              <i class="fa-solid fa-share-nodes"></i>
+              <b>Share materials</b>
+            </a>
+          </div>
+          <div class="group">
+            <div class="group__image"><img src="https://cdn2.vectorstock.com/i/1000x1000/77/36/artificial-intelligence-ai-icon-vector-23097736.jpg" alt=""></div>
+            <div class="group__info__click">
+              <div class="group__info">
+                <h3>Programming</h3>
+                <p class="group__student__count">No of Student 180</p>
+              </div>
+              <i class="fa-solid fa-angle-down group__right__arow"></i>
+            </div>
+          </div>
+          <div class="group">
+            <div class="group__image"><img src="https://cdn2.vectorstock.com/i/1000x1000/77/36/artificial-intelligence-ai-icon-vector-23097736.jpg" alt=""></div>
+            <div class="group__info__click">
+              <div class="group__info">
+                <h3>Regression</h3>
+                <p class="group__student__count">No of Student 80</p>
+              </div>
+              <i class="fa-solid fa-angle-down group__right__arow"></i>
+            </div>
+          </div>
+          <div class="new__group">
+            <button class="create__new__group">
+              <i class="fa-solid fa-plus"></i>
+              Create New Group
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="body__part body__semester__progress">
+        <div class="body__groups__header">
+          <h3>Semester progress</h3>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div class="process__container">
+          <div class="semester_progress">
+            <div class="progress purple__bg">
+              <div class="process__icon ">
+                <!------------------------------------Icon  ------------------------------------------->
+                <i class="fa-solid fa-circle-notch"></i>
+              </div>
+              <div class="details">
+                  <p>Lesson Progrss</p>
+                  <p class="score">32 <span class="opacity-50">/ 35</span></p>
+                </div>
+            </div>
+          </div>
+          <div class="exam__schedule">
+            <div class="progress">
+              <div class="process__icon ">
+                <!-- -------------------------------------Icon  ---------------------------------------->
+                <i class="fa-solid fa-calendar-check"></i>
+              </div>
+              <div class="details">
+                  <p>Semester Exam in</p>
+                  <p class="score">20 days</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="body__part body__inbox">
+        <div class="body__groups__header">
+          <h3>Inbox</h3>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div class="inbox__container">
+          <!-- --------------------------------------Single Chat ----------------------------------------- -->
+          <div class="single__chat">
+            <div class="chat">
+              <div class="chat__wrapper">
+                <div class="upper__part">
+                  <div class="chat__image"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAwQFBgcCCAH/xAA6EAABAwMCAwcBBQUJAAAAAAABAAIDBAUREiEGMUEHEyJRYXGBoTJCYpGxFBWS0fAjJDM0Q1JzweH/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAwIBBP/EAB0RAAICAwEBAQAAAAAAAAAAAAABAgMRITEScQT/2gAMAwEAAhEDEQA/ANxQhCAEISNbVQ0NHNV1UgjghYZJHn7rQMkoBZN5K6jjmEMlXAyU8o3SAO/JYVxj2iV9+ldT0jpKS36vBE06XyD8ZB+g298ZVHq6nDiTgl2/icF3APWqF5w4N7Q7vw9O2Nz31lAcaqeZ5IaPwH7vty9Oq9AWO70d8tcFxt8neU8zctJ5g8iD5EHZcA/QhCAEIQgBCEIAVD7aK79k4NMQLgaqpZEMHyy/f08Cvio/bFQGu4LkeOdNURSj5Og/R+fhAedZ6gsc4g9dgk3/ALTL4ooXEY+8rze7PZ7M2F7Ld373DOl0xGcdfrv03C+2niOxzwOaLAyOWNpPhGvIHM5U5WtbSLRqT6zPDHU6tIicD+EbLR+w2811Fxcy1OlcKWta/vYnbgva3IcPJ22PUc+QVfquIRW1TjFboKeHfS/Bc4jn5jor32T2sO44FwYB3bbfIS4f7y5oHzjV+S1GTfUYlFLjNtQhC0YBCEIAQhCAFUe0x07bHEIZXNZJP3UrAcCRrmuGD6dfhW5ML3aoLzb5KKpLmtfuHNOC0+YXHtaOxeHsyart1PdYQXlgc6PGstBwMbjfzSdBZLeI5n0+JR3bo3ynGHHGMDHoAMeyb8TwfuuvqrbTyu0U7tI1Hdw0gjOPdQdTBWS0sZqK6mpXtZgYn7sOHlu36ZXilGWWmz3xlHCaQ7prdQuHcyO0SxF2pms4d0JHvjdPOGHRycb2WOIfZqHOaAOm+/5Byp/95pWCJksTogd3sOck9QcBa92QWWintrb7NTk1jJZIYZS440AAHA5c9Yz7q9cGnnJC2axjBpaEIVzzAhCEAIQhACEZXDngIDM+1+jpoZKK4wsaaw6mSNz/AIjByJHods+uPbLLrxLFTs7t1C8PxsH8v/Vpfa1BPDe6CsJc6nqKcwEdGvY4u+ocf4VQ7lHFPGzvo2yNZyGN15rJRU9o9VcZOGmV+O6zXBoEdIyMYxqxgZ9l6e4WqLfVcP0Mlo7sUfdBsbWDAbjYjHmDnK83GIRhztIaOg8lsHY3JJDwTTuH2ZKid2D/AMhH/SrW0+ErE100ZCRjqGu2cNJSwOeSoSBCEIAXL3hq6TCWXxbHcHOPRAKSyuJAbsT9EM8Rb77pLqc8kFgljexw8LhgjzCAq/FdfZOJWScOQ1bZLicugc1pLGytGoN14xnAOQDnGVltwtlZSO7irgkjnYdL2n+twr7xJZIqC7xTRBrGv0SN0+HBY4Bx/hc38lP11odcYsVWkzRMxHO7Y+zj1H6Kd1WUmin57vLcZGQUHDlwv1bHb6ON41Fpml6RMJ3OfPAOB1W4UNPRUVLFQ290Xc0rRFojcDox0OORVeuV1bwta46WyQRVNXIR3kzs6NZ5YG2s+QyOXNdWLh9tNIa+pz+8qh5lnlYdO5307dB5cs5Xa4eY7OW2ep6LQHkSEDcJwyTAyDj9E1aNyunnOhvm4Z+N1swSMbw8bc+oXajqeQsrWjO0gIPuN/5qRQHMhxG4+QULI7FVnrspeqOISoao/wA18BAO4HiVgcOXVdsky4gDYKKs9RJJSTlxGWzuaMDpgfzUhAgI3iuFklHBJKBoEhY8no1zSOfvpS1rmdcbbAZXNcNAEgxkFzdj9QV1xE0PsVdq+5A6Rvo5o1NPwQCozhyZ0dvuGn/RlcW53+412/ySt9iSziz6hWa3RVN3ie/Lm051gHlrI2PwP19FMiMMafZR9lzJEyV5LnvYHOJ6kjJ+pUi77J9lkqjhp8eOq+Sv0yNHk0lcNP8AbNTW5PImcM7FjQgFoJ3SVLXZ8DHtAx1JOOanlWoBpoiRsdSsgOQCuA//2Q==" alt=""></div>
+                  <div class="user">
+                    <div class="name__time">
+                      <p class="user__name">NAHID HASAN</p>
+                      <p class="time">9:00</p>
+                    </div>
+                    <p class="status ">Online</p>
+                  </div>
+                </div>
+                <div class="lower__part">
+                  <p class="msg">B.Sc. in Computer Science & Engineering (CSE), Pundra University of Science & Technology</p>
+                </div>
+              </div>
+              <div class="dot"></div>
+              <div class="reply">
+                <i class="fa-solid fa-paper-plane"></i>
+                <p>Reply</p>
+              </div>
+              <div class="remove__chat">
+                <i class="fa-solid fa-trash-can"></i>
+                <p>Remove</p>
+              </div>
+            </div>
+          </div>
+          <!---------------------------------------------- Single Chat End -------------------------------------- -->
+          <div class="single__chat">
+            <div class="chat read">
+              <div class="chat__wrapper">
+                <div class="upper__part">
+                  <div class="chat__image"><img src="http://pundrauniversity.ac.bd/_next/image?url=http%3A%2F%2Fapi.pundrauniversity.ac.bd%3A80%2Fassets%2Fimages%2Femployee%2Fmd-palash-tai.png&w=256&q=75" alt=""></div>
+                  <div class="user">
+                    <div class="name__time">
+                      <p class="user__name">Polash Tai</p>
+                      <p class="time">2:00</p>
+                    </div>
+                    <p class="status online">Offline </p>
+                  </div>
+                </div>
+                <div class="lower__part">
+                  <p class="msg">M. Sc. in Information and Communication Engineering (ICE), University of Rajshahi</p>
+                </div>
+              </div>
+              <div class="dot"></div>
+              <div class="reply">
+                <i class="fa-solid fa-paper-plane"></i>
+                <p>Reply</p>
+              </div>
+              <div class="remove__chat">
+                <i class="fa-solid fa-trash-can"></i>
+                <p>Remove</p>
+              </div>
+            </div>
+          </div>
+          <div class="single__chat">
+            <div class="chat">
+              <div class="chat__wrapper">
+                <div class="upper__part">
+                  <div class="chat__image"><img src="http://pundrauniversity.ac.bd/_next/image?url=http%3A%2F%2Fapi.pundrauniversity.ac.bd%3A80%2Fassets%2Fimages%2Femployee%2Fmd-rabiul-islam.png&w=256&q=75" alt=""></div>
+                  <div class="user">
+                    <div class="name__time">
+                      <p class="user__name">Rabiul Islam</p>
+                      <p class="time">9:00Am</p>
+                    </div>
+                    <p class="status online">Online</p>
+                  </div>
+                </div>
+                <div class="lower__part">
+                  <p class="msg">Lecturer,Pundra University of Science & Technology (2022-Till now)</p>
+                </div>
+              </div>
+              <div class="dot"></div>
+              <div class="reply">
+                <i class="fa-solid fa-paper-plane"></i>
+                <p>Reply</p>
+              </div>
+              <div class="remove__chat">
+                <i class="fa-solid fa-trash-can"></i>
+                <p>Remove</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const addNewButton = document.getElementById("addNewItem");
+  const navList = document.querySelector(".navigation__list");
+
+  function createNewItem() {
+    // Create a new list item
+    const newItem = document.createElement("li");
+    newItem.className = "navigation__item";
+
+    // Create an icon for the item
+    const newIcon = document.createElement("i");
+    newIcon.className = "fa-solid fa-folder-plus"; // Add Font Awesome icon class
+    newItem.appendChild(newIcon);
+
+    // Create an input field for the new item's name
+    const nameInput = document.createElement("input");
+    nameInput.type = "text";
+    nameInput.className = "edit-input";
+    nameInput.value = "New Item"; // Default name
+    newItem.appendChild(nameInput);
+
+    // Handle input change and confirm the name
+    nameInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        const newName = document.createTextNode(` ${nameInput.value}`); // Add a space after the icon
+        newItem.removeChild(nameInput); // Remove the input field
+        newItem.appendChild(newName); // Add static text
+      }
+    });
+
+    // Append the new item to the navigation list
+    navList.appendChild(newItem);
+
+    // Focus on the input field for immediate editing
+    nameInput.focus();
+  }
+
+  if (addNewButton) {
+    addNewButton.addEventListener("click", (e) => {
+      e.preventDefault(); // Prevent default link behavior
+      createNewItem(); // Call the function to create and add the new item
+    });
+  } else {
+    console.error("Button with ID 'addNewItem' not found.");
+  }
+});
+    </script>
+    
+    
+  </body>
+</html>
